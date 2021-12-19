@@ -195,7 +195,7 @@ async def play(client, m: Message):
                             # await m.reply_to_message.delete()
                             await m.reply_photo(
                                 photo=f"{IMAGE_THUMBNAIL}",
-                                caption=f""❤️<b>__Playing:__ </b>[{title}]({url}) \n⏳<b>__Duration:__</b> {duration} \n💡 chat id: {chat_id}\n👤**__Requested by:__** {m.from_user.mention}")
+                                caption=f"❤️<b>__Playing:__ </b>[{title}]({url}) \n⏳<b>__Duration:__</b> {duration} \n💡 chat id: {chat_id}\n👤**__Requested by:__** {m.from_user.mention}")
     
                         except Exception as ep:
                             await huehue.edit(f"`{ep}`")
